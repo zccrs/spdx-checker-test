@@ -1,0 +1,23 @@
+name: SPDX Header Check
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  spdx-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Run SPDX Header Checker
+        uses: zccrs/github-actions-spdx-checker@v1
+        with:
+          base: origin/main
+          include: '*.py,*.js,*.ts,*.cpp,*.c,*.h,*.sh,*.yaml,*.yml'
+          exclude: 'node_modules/**,vendor/**'
