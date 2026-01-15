@@ -23,12 +23,6 @@ jobs:
       - name: SPDX Checker
         uses: zccrs/github-actions-spdx-checker@main
         with:
-          include: |
-            src/**/*.py
-            src/**/*.cpp
-            src/**/*.h
-            src/**/*.js
-            tests/**/*.py
           exclude: |
             **/__pycache__/**
             **/node_modules/**
