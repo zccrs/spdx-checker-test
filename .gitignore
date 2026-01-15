@@ -18,4 +18,4 @@ npm-debug.log
 
 # OS
 .DS_Store
-Thumbs.db
+Thumbs.db_codeql_detected_source_root
