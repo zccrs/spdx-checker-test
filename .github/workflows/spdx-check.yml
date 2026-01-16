@@ -28,5 +28,5 @@ jobs:
             **/node_modules/**
             **/.venv/**
             **/.git/**
-          holder: 'UnionTech Software Technology Co., Ltd.'
+          holder: UnionTech Software Technology Co., Ltd.
           
