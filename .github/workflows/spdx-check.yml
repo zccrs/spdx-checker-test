@@ -28,5 +28,5 @@ jobs:
             **/node_modules/**
             **/.venv/**
             **/.git/**
-          hodler: zccrs
+          hodler: 'UnionTech Software Technology Co., Ltd.'
           
