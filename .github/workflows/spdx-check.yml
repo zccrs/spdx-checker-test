@@ -23,7 +23,7 @@ jobs:
       - name: SPDX Checker
         uses: zccrs/github-actions-spdx-checker@main
         with:
-          holder: 'UnionTech Software Technology Co., Ltd.'
+          holder: 'zccrs'
           exclude: |
             **/__pycache__/**
             **/node_modules/**
