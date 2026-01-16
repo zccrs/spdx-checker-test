@@ -1,0 +1,32 @@
+name: SPDX License Header Check
+
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  check-spdx:
+    runs-on: ubuntu-latest
+    name: Check SPDX License Headers
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: SPDX Checker
+        uses: zccrs/github-actions-spdx-checker@main
+        with:
+          holder: 'zccrs'
+          exclude: |
+            **/__pycache__/**
+            **/node_modules/**
+            **/.venv/**
+            **/.git/**
+          
