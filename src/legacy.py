@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023-2026 zccrs
+# SPDX-FileCopyrightText: 2026 zccrs
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 """
